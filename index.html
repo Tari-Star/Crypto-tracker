@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crypto Tracker</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-     <link rel="stylesheet" href="style.css">
-</head>
-<body> 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-    <header><h1>Crypto Tracker</h1></header>
-    <div class="row">
-       <div class="title col-sm-2">coin</div>
-        <div class="title col-sm-2">price</div>
-        <div class="title col-sm-2">market cap</div>
-        <div class="title col-sm-2">all-time high</div>
-        <div class="title col-sm-2">one hour</div>
-        <div class="title col-sm-2">24 hour</div>
+      <header>
+        <h1><strong>Crypto Tracker</strong></h1>
+      </header>
+      <!-- inputs -->
+      <div class="row">
+        <div class="col-sm-6 input-group">
+          <div class="col-sm-6 crypto">
+            <h2>some text</h2>
+            <input type="text" id="searchCurrency" value="" />
+            <button class="submit-btn">Search!</button>
+          </div>
+          <!-- converter start / will leave it here as an example / still needs to work on id's -->
+          <div class="col-sm-6 converter">
+            <h2>Converter</h2>
+            <form>
+              <input type="number" id="amount" placeholder="Enter currency" />
+
+              <select id="rate">
+                <option disabled selected value="select">
+                  select currency
+                </option>
+                <option value="3665.301">USD</option>
+                <option value="4635.3835">GBP</option>
+                <option value="4635.3835">EUR</option>
+              </select>
+
+              <input type="text" id="" placeholder="result" />
+            </form>
+          </div>
+          <!-- end of converter -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="title col-sm-2"><h2>coin</h2></div>
+        <div class="title col-sm-2"><h2>price</h2></div>
+        <div class="title col-sm-2"><h2>market cap</h2></div>
+        <div class="title col-sm-2"><h2>all-time high</h2></div>
+        <div class="title col-sm-2"><h2>1 hour</h2></div>
+        <div class="title col-sm-2"><h2>24 hour</h2></div>
+      </div>
     </div>
-</div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
