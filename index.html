@@ -20,26 +20,89 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
     />
   </head>
+
   <body>
     <div class="container">
       <header>
         <h1><strong>Crypto Tracker</strong></h1>
       </header>
-      <!-- inputs -->
+      <!-- Inputs Section -->
       <div class="row">
         <h2 class="title-converter">Converter</h2>
       </div>
       <div class="row converter sec-1">
         <form>
-          <input type="text" id="amount" placeholder="Enter currency" />
+          <!--Input Type Updated from 'Text', I can't get this to run unless it is a number (AW)-->
+          <input type="number" id="amount" placeholder="Enter Amount" />
 
-          <select id="rate">
-            <option disabled selected value="select">select currency</option>
-            <option value="3665.301">USD</option>
-            <option value="4635.3835">GBP</option>
-            <option value="4635.3835">EUR</option>
+          <!--Fiat Currency Selection-->
+          <select id="fiatType-ID">
+            <option disabled selected value="select">Select Currency</option>
+            <option value="AED">AED</option>
+            <option value="ARS">ARS</option>
+            <option value="AUD">AUD</option>
+            <option value="BGN">BGN</option>
+            <option value="BRL">BRL</option>
+            <option value="BSD">BSD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+            <option value="CLP">CLP</option>
+            <option value="CNY">CNY</option>
+            <option value="COP">COP</option>
+            <option value="CZK">CZK</option>
+            <option value="DKK">DKK</option>
+            <option value="DOP">DOP</option>
+            <option value="EGP">EGP</option>
+            <option value="EUR">EUR</option>
+            <option value="FJD">FJD</option>
+            <option value="GBP">GBP</option>
+            <option value="GTQ">GTQ</option>
+            <option value="HKD">HKD</option>
+            <option value="HRK">HRK</option>
+            <option value="HUF">HUF</option>
+            <option value="IDR">IDR</option>
+            <option value="ILS">ILS</option>
+            <option value="INR">INR</option>
+            <option value="ISK">ISK</option>
+            <option value="JPY">JPY</option>
+            <option value="KRW">KRW</option>
+            <option value="KZT">KZT</option>
+            <option value="MXN">MXN</option>
+            <option value="MYR">MYR</option>
+            <option value="NOK">NOK</option>
+            <option value="NZD">NZD</option>
+            <option value="PAB">PAB</option>
+            <option value="PEN">PEN</option>
+            <option value="PHP">PHP</option>
+            <option value="PKR">PKR</option>
+            <option value="PLN">PLN</option>
+            <option value="PYG">PYG</option>
+            <option value="RON">RON</option>
+            <option value="RUB">RUB</option>
+            <option value="SAR">SAR</option>
+            <option value="SEK">SEK</option>
+            <option value="SGD">SGD</option>
+            <option value="THB">THB</option>
+            <option value="TRY">TRY</option>
+            <option value="TWD">TWD</option>
+            <option value="UAH">UAH</option>
+            <option value="USD">USD</option>
+            <option value="UYU">UYU</option>
+            <option value="VND">VND</option>
+            <option value="ZAR">ZAR</option>
           </select>
-          <button class="button is-success is-rounded">Submit</button>
+          <!--End Fiat Currency Selection-->
+         
+          <!--Submit Button-->
+          <div>
+            <button class="button is-success is-rounded" id="submit">Submit</button>
+            <div class="rate" id="rate>"></div>
+          </div>
+          <!--End Submit Button-->
+          
+      <!--End Inputs Section-->  
+      
+      
         </form>
       </div>
       <!-- end of converter -->
