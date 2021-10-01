@@ -15,7 +15,10 @@
     />
     <link rel="stylesheet" href="style.css" />
     <!--bulma/css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -24,43 +27,34 @@
       </header>
       <!-- inputs -->
       <div class="row">
-        <div class="col-sm-6 input-group">
-          <div class="col-sm-6 crypto">
-            <h2>some text</h2>
-            <input type="text" id="searchCurrency" value="" />
-            <!--bulma class-->
-            <button class="button is-success is-rounded">Search!</button>
-
-          </div>
-          <!-- converter start / will leave it here as an example / still needs to work on id's -->
-          <div class="col-sm-6 converter sec-1">
-            <h2>Converter</h2>
-            <form>
-              <input type="number" id="amount" placeholder="Enter currency" />
-
-              <select id="rate">
-                <option disabled selected value="select">
-                  select currency
-                </option>
-                <option value="3665.301">USD</option>
-                <option value="4635.3835">GBP</option>
-                <option value="4635.3835">EUR</option>
-              </select>
-
-              <input type="text" id="" placeholder="result" />
-            </form>
-          </div>
-          <!-- end of converter -->
-        </div>
+        <h2 class="title-converter">Converter</h2>
       </div>
+      <div class="row converter sec-1">
+        <form>
+          <input type="text" id="amount" placeholder="Enter currency" />
+
+          <select id="rate">
+            <option disabled selected value="select">select currency</option>
+            <option value="3665.301">USD</option>
+            <option value="4635.3835">GBP</option>
+            <option value="4635.3835">EUR</option>
+          </select>
+          <button class="button is-success is-rounded">Submit</button>
+        </form>
+      </div>
+      <!-- end of converter -->
+
       <div class="row" id="sections">
         <div class="title col-sm-2"><h2>coin</h2></div>
         <div class="title col-sm-2"><h2>price</h2></div>
         <div class="title col-sm-2"><h2>market cap</h2></div>
         <div class="title col-sm-2"><h2>all-time high</h2></div>
-        <div class="title col-sm-2"><h2>1 hour</h2></div>
         <div class="title col-sm-2"><h2>24 hour</h2></div>
+        <div class="title col-sm-2"><h2>output</h2></div>
       </div>
+     <div class="coin-list">
+       <ul class="coin"></ul>
+     </div>
     </div>
   </body>
   <script src="script.js"></script>
