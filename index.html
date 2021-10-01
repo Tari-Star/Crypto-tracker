@@ -14,6 +14,8 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <!--bulma/css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   </head>
   <body>
     <div class="container">
@@ -26,10 +28,12 @@
           <div class="col-sm-6 crypto">
             <h2>some text</h2>
             <input type="text" id="searchCurrency" value="" />
-            <button class="submit-btn">Search!</button>
+            <!--bulma class-->
+            <button class="button is-success is-rounded">Search!</button>
+
           </div>
           <!-- converter start / will leave it here as an example / still needs to work on id's -->
-          <div class="col-sm-6 converter">
+          <div class="col-sm-6 converter sec-1">
             <h2>Converter</h2>
             <form>
               <input type="number" id="amount" placeholder="Enter currency" />
@@ -49,7 +53,7 @@
           <!-- end of converter -->
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="sections">
         <div class="title col-sm-2"><h2>coin</h2></div>
         <div class="title col-sm-2"><h2>price</h2></div>
         <div class="title col-sm-2"><h2>market cap</h2></div>
