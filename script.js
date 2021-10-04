@@ -18,7 +18,7 @@
 
     coins.forEach(coin => {
       const coinEl = document.createElement("p");
-      coinEl.innerHTML = ("$" + coin.price_usd);
+      coinEl.innerHTML = "$" + (coin.price_usd)
       coinPrice.appendChild(coinEl);
     })
 

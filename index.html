@@ -23,20 +23,18 @@
 
   <body>
     <div class="container">
-      <header>
-        <h1><strong>Crypto Tracker</strong></h1>
+      <header class="title-custom">
+        <h1><strong>Crypto Converter</strong></h1>
       </header>
       <!-- Inputs Section -->
-      <div class="row">
-        <h2 class="title-converter">Converter</h2>
-      </div>
+
       <div class="row converter sec-1">
         <form>
           <!--Input Type Updated from 'Text', I can't get this to run unless it is a number (AW)-->
-          <input type="number" id="fiatAmount-ID" placeholder="Enter Amount" value="1" />
+          <input type="number" id="fiatAmount-ID" placeholder="Enter Amount"/>
 
           <select id="rate">
-            <option disabled selected value="select">Please Enter Amount</option>
+            <option disabled selected value="select">Please Select Currency</option>
             <option value="3665.301">USD</option>
             <option value="4635.3835">GBP</option>
             <option value="4635.3835">EUR</option>
@@ -58,12 +56,12 @@
       <!-- end of converter -->
 
       <div class="row" id="sections">
-        <div class="title col-sm-2"><h2>coin</h2></div>
-        <div class="title col-sm-2"><h2>price</h2></div>
-        <div class="title col-sm-2"><h2>marketcap</h2></div>
-        <div class="title col-sm-2"><h2>1 hour</h2></div>
-        <div class="title col-sm-2"><h2>24 hour</h2></div>
-        <div class="title col-sm-2"><h2>output</h2></div>
+        <div class="title col-sm-2"><h2>Coin</h2></div>
+        <div class="title col-sm-2"><h2>Price</h2></div>
+        <div class="title col-sm-2"><h2>Marketcap</h2></div>
+        <div class="title col-sm-2"><h2>1 Hour</h2></div>
+        <div class="title col-sm-2"><h2>24 Hour</h2></div>
+        <div class="title col-sm-2"><h2>Output</h2></div>
       </div>
       <div class="row api-style" id="info">
         <div class="col-sm-2 coin-list"></div>
