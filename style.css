@@ -15,6 +15,9 @@ header {
     color:whitesmoke ;
     font-size: larger;
 }
+.btn-container {
+    padding-top: 8px;
+}
 h1 strong {
     color: whitesmoke;
 }
