@@ -29,6 +29,11 @@ h1 strong {
     border-color: whitesmoke ;
 }
 
+.api-style {
+    padding-top: 2px;
+    color:whitesmoke;
+}
+
 .sec-1 {
     padding-bottom: 15px;
 }
