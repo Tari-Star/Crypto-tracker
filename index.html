@@ -20,18 +20,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
     />
   </head>
+
   <body>
     <div class="container">
       <header>
         <h1><strong>Crypto Tracker</strong></h1>
       </header>
-      <!-- inputs -->
+      <!-- Inputs Section -->
       <div class="row">
         <h2 class="title-converter">Converter</h2>
       </div>
       <div class="row converter sec-1">
         <form>
-          <input type="text" id="amount" placeholder="Enter currency" />
+          <!--Input Type Updated from 'Text', I can't get this to run unless it is a number (AW)-->
+          <input type="number" id="fiatAmount-ID" placeholder="Enter Amount" value="1" />
 
           <select id="rate">
             <option disabled selected value="select">Please Enter Amount</option>
@@ -39,7 +41,18 @@
             <option value="4635.3835">GBP</option>
             <option value="4635.3835">EUR</option>
           </select>
-          <button class="button is-success is-rounded">Submit</button>
+          <!--End Fiat Currency Selection-->
+         
+          <!--Submit Button-->
+          <div>
+            <button class="button is-success is-rounded" id="submit">Submit</button>
+            <div class="rate" id="rate>"></div>
+          </div>
+          <!--End Submit Button-->
+
+      <!--End Inputs Section-->  
+      
+      
         </form>
       </div>
       <!-- end of converter -->
