@@ -40,5 +40,23 @@
     })
   }
 
+  var userInput = document.getElementById('amount');
+userInput.addEventListener('keyup', function(e) {
+    if (isNumeric(this.value) == true) {
+      var divide = Math.round(this.value / 12);
+      document.getElementById('anwsers').innerHTML = divide;
+    }
+})
+
+function isNumeric(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+ 
+
+
+
+
+
 
   
