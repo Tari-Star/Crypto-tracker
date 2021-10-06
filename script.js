@@ -42,35 +42,51 @@
     })
   }; 
   
-  // 
-  const currency ="";
-  // 
-  const currencyU = "USD";
-   fetch('https://free.currconv.com/api/v7/convert?q=USD_' + currency + '&compact=ultra&apiKey=1818d0fb079f7cd25a8c')
-   .then(response => response.json())
-   .then(currencies => convert(currencies));
-  
-  const convert = currencies => {
-    console.log(currencies);
-  const coinOutput = document.querySelector(".output");
-  const currencyG = "GBP";
-  const currencyE = "EUR";
-  
-  // if(currency = currencyG){
-  
-  // } if (currency = currencyE){
+//   // I commented out part that I did,didnt want to messed up what Andy did. So choose whatever needs/Bota
 
-  // }
- }
- const convertBtn = document.querySelector(".button");
- convertBtn.addEventListener("click",convert());
+
+//   const currency ="";
+//   // 
+//   const currencyU = "USD";
+//    fetch('https://free.currconv.com/api/v7/convert?q=USD_' + currency + '&compact=ultra&apiKey=1818d0fb079f7cd25a8c')
+//    .then(response => response.json())
+//    .then(currencies => convert(currencies));
   
-   
+//   const convert = currencies => {
+//     console.log(currencies);
+//   const coinOutput = document.querySelector(".output");
+//   const currencyG = "GBP";
+//   const currencyE = "EUR";
+  
+//   // if(currency = currencyG){
+  
+//   // } if (currency = currencyE){
+
+//   // }
+//  }
+//  const convertBtn = document.querySelector(".button");
+//  convertBtn.addEventListener("click",convert());
+
+  //Output Calculator
+  var currencyG = "GBP";
+  var currencyE = "EUR";
+   fetch('https://free.currconv.com/api/v7/convert?q=USD_' + currencyE + '&compact=ultra&apiKey=1818d0fb079f7cd25a8c')
+   .then(response => response.json())
+   .then(currencies => convert(currencies.data))
+   var convert=currencies => {
+     currencies.forEach(currency => {
+      const currencyEl = document.createElement("p");
+      currencyEl.innerHTML = (currency.currencyG);
+      coinOutput.appendChild(currencyEl);
+     })
+   };
+
+  
 
  
 
 
-    // //Output Calculator (framework - needs work)
+
     // coins.forEach(coin => {
     //   const coinEl = document.createElement("p");
     //   if (document.getElementById("rate") = "USD") {
@@ -87,6 +103,28 @@
 
     //   coinOutput.appendChild(coinEl);
     // })
+  
+   
+
+
+
+    //Output Calculator (framework - needs work)
+    //  coins.forEach(coin => {
+    //    const coinEl = document.createElement("p");
+    //    if (document.getElementById("rate") = "USD") {
+    //      coinEl.innerHTML = (coin.price_usd / document.getElementById("amount"));
+    //    };
+
+    //    if (document.getElementById("rate") = "GBP") {
+    //      coinEl.innerHTML = ((coin.price_usd*.73) / document.getElementById("amount"));
+    //    };
+
+    //    if (document.getElementById("rate") = "EUR") {
+    //      coinEl.innerHTML = ((coin.price_usd*.86) / document.getElementById("amount"));
+    //    };
+
+    //    coinOutput.appendChild(coinEl);
+    //  })
     
 
 
