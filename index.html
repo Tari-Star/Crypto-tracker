@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crypto Tracker</title>
+    <title>Crypto Converter</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -50,21 +50,21 @@
     </div>
       <!-- end of converter -->
 
-      <div class="row" id="sections">
-        <div class="title col-sm-2"><h2>Coin</h2></div>
-        <div class="title col-sm-2"><h2>Price</h2></div>
-        <div class="title col-sm-2"><h2>Marketcap</h2></div>
-        <div class="title col-sm-2"><h2>1 Hour</h2></div>
-        <div class="title col-sm-2"><h2>24 Hour</h2></div>
-        <div class="title col-sm-2"><h2>Output</h2></div>
+      <div class="columns" id="sections">
+        <div class="title column is-2"><h2>Coin</h2></div>
+        <div class="title column is-2"><h2>Price</h2></div>
+        <div class="title column is-2"><h2>Market Cap</h2></div>
+        <div class="title column is-2"><h2>1 Hour</h2></div>
+        <div class="title column is-2"><h2>24 Hour</h2></div>
+        <div class="title column is-2"><h2>Output</h2></div>
       </div>
-      <div class="row api-style" id="info">
-        <div class="col-sm-2 coin-list"></div>
-        <div class="col-sm-2 price"></div>
-        <div class="col-sm-2 market-cap"></div>
-        <div class="col-sm-2 one-hour"></div>
-        <div class="col-sm-2 hours"></div>
-        <div class ="col-sm-2 output"></div>
+      <div class="columns api-style" id="info">
+        <div class="column is-2 coin-list"></div>
+        <div class="column is-2 price"></div>
+        <div class="column is-2 market-cap"></div>
+        <div class="column is-2 one-hour" id="one"></div>
+        <div class="column is-2 hours"></div>
+        <div class ="column is-2 output"></div>
         </div>
     </div>
   </body>

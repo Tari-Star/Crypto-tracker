@@ -1,85 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
-    
-} 
+  margin: 0;
+  padding: 0;
+}
 
 header {
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-size: 120px;
-    color: rgb(0, 238, 255);
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 90px;
+  color: rgb(0, 238, 255);
 }
+
 .title-converter {
-    padding-bottom: 5px;
-    color:whitesmoke ;
-    font-size: larger;
+  padding-bottom: 5px;
+  color: whitesmoke;
+  font-size: larger;
 }
-.center-align{
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
-    display:inline-block;
-    padding-left: 270px;
+
+.center-align {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  display: inline-block;
+  padding-left: 270px;
 }
+
 h1 strong {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 #submit-button-container {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 #submit {
-    border-color: rgb(0, 238, 255);
-    background-color: black;
-    color: whitesmoke;
-    font-weight: bold;
+  border-color: rgb(0, 238, 255);
+  background-color: black;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
 /* Submit Button Fill from left */
 .button-fill-left {
-    box-shadow: inset 0px 0px 0px rgb(0, 238, 255);
-    transition: all 1.8s !important;
-    text-shadow: whitesmoke;
-    }
-    
-.button-fill-left:hover {
-    box-shadow: inset 150px 0px 0px rgb(0, 238, 255);
-    text-shadow: whitesmoke;
-    }
-
-
-#sections {
-    padding-top: 20px;
-    text-align: center;
-    border-style: solid;
-    border-color: rgb(0, 238, 255);
+  box-shadow: inset 0px 0px 0px rgb(0, 238, 255);
+  transition: all 1.8s !important;
+  text-shadow: whitesmoke;
 }
 
+.button-fill-left:hover {
+  box-shadow: inset 150px 0px 0px rgb(0, 238, 255);
+  text-shadow: whitesmoke;
+}
 
+#sections {
+  padding-top: 20px;
+  text-align: center;
+  border-style: solid;
+  border-color: rgb(0, 238, 255);
+}
 
 .api-style {
-    padding-top: 2px;
-    color:whitesmoke;
-    text-align: center;
+  padding-top: 2px;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 40px;
 }
 
 .sec-1 {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 h2 {
-    color:whitesmoke;
+  color: whitesmoke;
 }
 
+.coin-list {
+  font-weight: bold;
+}
 
-
-
-
-
+.rate {
+  padding-bottom: 5px;
+}

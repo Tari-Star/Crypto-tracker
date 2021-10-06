@@ -1,4 +1,4 @@
-   fetch(' https://api.coinlore.net/api/tickers/')
+   fetch(' https://api.coinlore.net/api/tickers/?start=0&limit=30')
   .then(response => response.json())
   .then(coins => showCrypto(coins.data));
 
@@ -33,16 +33,30 @@
       const coinEl = document.createElement("p");
       coinEl.innerHTML = (coin.percent_change_1h + "%");
      coinOneHour.appendChild(coinEl);
+
+     
+
+     if(coin.percent_change_1h >= 0){
+       coinEl.style.color = "#23fc5d";
+     } else{
+       coinEl.style.color = "#ff2b0a";
+     }
     })
 
     coins.forEach(coin => {
       const coinEl = document.createElement("p");
       coinEl.innerHTML = (coin.percent_change_24h + "%");
       coinHours.appendChild(coinEl);
+
+      if(coin.percent_change_24h >= 0){
+        coinEl.style.color = "#23fc5d";
+      } else{
+        coinEl.style.color = "#ff2b0a";
+      }
     })
   }; 
   
-//   // I commented out part that I did,didnt want to messed up what Andy did. So choose whatever needs/Bota
+
 
 
 //   const currency ="";
@@ -68,18 +82,18 @@
 //  convertBtn.addEventListener("click",convert());
 
   //Output Calculator
-  var currencyG = "GBP";
-  var currencyE = "EUR";
-   fetch('https://free.currconv.com/api/v7/convert?q=USD_' + currencyE + '&compact=ultra&apiKey=1818d0fb079f7cd25a8c')
-   .then(response => response.json())
-   .then(currencies => convert(currencies.data))
-   var convert=currencies => {
-     currencies.forEach(currency => {
-      const currencyEl = document.createElement("p");
-      currencyEl.innerHTML = (currency.currencyG);
-      coinOutput.appendChild(currencyEl);
-     })
-   };
+  // var currencyG = "GBP";
+  // var currencyE = "EUR";
+  //  fetch('https://free.currconv.com/api/v7/convert?q=USD_' + currencyE + '&compact=ultra&apiKey=1818d0fb079f7cd25a8c')
+  //  .then(response => response.json())
+  //  .then(currencies => convert(currencies.data))
+  //  var convert=currencies => {
+  //    currencies.forEach(currency => {
+  //     const currencyEl = document.createElement("p");
+  //     currencyEl.innerHTML = (currency.currencyG);
+  //     coinOutput.appendChild(currencyEl);
+  //    })
+  //  };
 
   
 
@@ -94,11 +108,11 @@
     //   };
 
     //   if (document.getElementById("rate") = "GBP") {
-    //     coinEl.innerHTML = ((coin.price_usd*) / document.getElementById("amount"));
+    //     coinEl.innerHTML = ((coin.price_usd) / document.getElementById("amount"));
     //   };
 
     //   if (document.getElementById("rate") = "EUR") {
-    //     coinEl.innerHTML = ((coin.price_usd*.86) / document.getElementById("amount"));
+    //     coinEl.innerHTML = ((coin.price_usd) / document.getElementById("amount"));
     //   };
 
     //   coinOutput.appendChild(coinEl);
