@@ -2,6 +2,8 @@
   .then(response => response.json())
   .then(coins => showCrypto(coins.data));
 
+  fetch()
+
   const showCrypto = coins => {
     const coinList = document.querySelector(".coin-list");
     const coinPrice = document.querySelector(".price");
@@ -60,6 +62,7 @@
     })
   };  
 
+  
 
 
 
