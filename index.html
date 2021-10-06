@@ -31,18 +31,17 @@
       <div class="row converter sec-1 center-align">
         <form>
           <!--Inputs-->
-          <input type="number" id="fiatAmount-ID" placeholder="Please Enter Amount"/>
+          <input type="number" class="fiatAmount-ID" id="fiatAmount-ID" value="" placeholder="Enter amount"/>
 
-          <select id="rate">
-            <option disabled selected value="select">Please Select Currency</option>
-            <option value="3665.301">USD</option>
-            <option value="4635.3835">GBP</option>
-            <option value="4635.3835">EUR</option>
+          <select id="rate" >
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
           </select>
           <!--End Fiat Currency Selection-->
           <!--Submit Button-->
           <div id="submit-button-container">
-            <button class="button is-primary is-rounded button-fill-left" id="submit">Convert</button>
+            <button  class="button is-primary is-rounded button-fill-left" id="submit">Convert</button>
             <div class="rate" id="rate"></div>
           </div>
           <!--End Submit Button-->
@@ -68,5 +67,6 @@
         </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="script.js"></script>
 </html>
