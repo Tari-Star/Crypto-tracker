@@ -58,12 +58,8 @@ const showCrypto = (coins) => {
    }
  })
 
-<<<<<<< HEAD
-  
-=======
 const rate = document.querySelector(".rate").value;
  // selected currency
->>>>>>> d8edaafc404c239297405ee64687a1433a8b1725
 
 const fiatAmount = document.querySelector(".fiatAmount-ID").value; // amount input
 
