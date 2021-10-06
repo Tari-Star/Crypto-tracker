@@ -42,17 +42,25 @@
     })
   }; 
 
+  //Output Calculator
   var currencyG = "GBP";
   var currencyE = "EUR";
    fetch('https://free.currconv.com/api/v7/convert?q=USD_' + currencyE + '&compact=ultra&apiKey=1818d0fb079f7cd25a8c')
    .then(response => response.json())
-   .then()
+   .then(currencies => convert(currencies.data))
+   var convert=currencies => {
+     currencies.forEach(currency => {
+      const currencyEl = document.createElement("p");
+      currencyEl.innerHTML = (currency.currencyG);
+      coinOutput.appendChild(currencyEl);
+     })
+   };
+
   
-   
 
 
 
-    // //Output Calculator (framework - needs work)
+
     // coins.forEach(coin => {
     //   const coinEl = document.createElement("p");
     //   if (document.getElementById("rate") = "USD") {
@@ -69,6 +77,28 @@
 
     //   coinOutput.appendChild(coinEl);
     // })
+  
+   
+
+
+
+    //Output Calculator (framework - needs work)
+    //  coins.forEach(coin => {
+    //    const coinEl = document.createElement("p");
+    //    if (document.getElementById("rate") = "USD") {
+    //      coinEl.innerHTML = (coin.price_usd / document.getElementById("amount"));
+    //    };
+
+    //    if (document.getElementById("rate") = "GBP") {
+    //      coinEl.innerHTML = ((coin.price_usd*.73) / document.getElementById("amount"));
+    //    };
+
+    //    if (document.getElementById("rate") = "EUR") {
+    //      coinEl.innerHTML = ((coin.price_usd*.86) / document.getElementById("amount"));
+    //    };
+
+    //    coinOutput.appendChild(coinEl);
+    //  })
     
 
 
