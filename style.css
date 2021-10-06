@@ -16,6 +16,10 @@ header {
     color:whitesmoke ;
     font-size: larger;
 }
+#fiatAmount-ID{
+    background-color: black;
+    color:rgb(0, 238, 255)
+}
 .center-align{
     margin: 0 auto;
     width: 80%;
@@ -38,7 +42,7 @@ h1 strong {
     font-weight: bold;
 }
 
-/* Submit Button Fill from left */
+/* Submit Button Animation */
 .button-fill-left {
     box-shadow: inset 0px 0px 0px rgb(0, 238, 255);
     transition: all 1.8s !important;
@@ -49,6 +53,7 @@ h1 strong {
     box-shadow: inset 150px 0px 0px rgb(0, 238, 255);
     text-shadow: whitesmoke;
     }
+/* End Submit Button Animation */
 
 
 #sections {
