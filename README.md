@@ -1,6 +1,5 @@
 # Crypto-tracker
 
-
 This project is a crypto currency tracker that estimates the amount of crypto you can buy with whatever amount in USD/GBP/EUR invested.
 
 # Technologies
