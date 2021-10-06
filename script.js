@@ -1,5 +1,5 @@
 // fetch and display all crypto currencies
-fetch(" https://api.coinlore.net/api/tickers/")
+fetch("https://api.coinlore.net/api/tickers/?start=0&limit=30")
   .then((response) => response.json())
   .then((coins) => showCrypto(coins.data));
 
@@ -38,14 +38,26 @@ const showCrypto = (coins) => {
     const coinEl = document.createElement("p");
     coinEl.innerHTML = coin.percent_change_1h + "%";
     coinOneHour.appendChild(coinEl);
-  });
 
-  coins.forEach((coin) => {
-    const coinEl = document.createElement("p");
-    coinEl.innerHTML = coin.percent_change_24h + "%";
-    coinHours.appendChild(coinEl);
-  });
-};
+  if(coin.percent_change_1h >= 0){
+    coinEl.style.color = "#23fc5d";
+  } else{
+    coinEl.style.color = "#ff2b0a";
+  }
+})
+
+ coins.forEach(coin => {
+   const coinEl = document.createElement("p");
+   coinEl.innerHTML = (coin.percent_change_24h + "%");
+   coinHours.appendChild(coinEl);
+
+   if(coin.percent_change_24h >= 0){
+     coinEl.style.color = "#23fc5d";
+   } else{
+     coinEl.style.color = "#ff2b0a";
+   }
+ })
+
 const rate = document.querySelector(".rate").value;
  // selected currency
 
@@ -68,6 +80,4 @@ fetch(
   coinOutput.appendChild(coinEl);
 };
  const convertBtn = document.querySelector(".button");
- convertBtn.addEventListener("click",convertCurrency) ;
-
-
+}
