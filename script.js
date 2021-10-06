@@ -8,7 +8,7 @@
     const coinMcap =document.querySelector(".market-cap");
     const coinOneHour = document.querySelector(".one-hour");
     const coinHours = document.querySelector(".hours");
-    const coinOutput = document.querySelector(".output")
+    
 
     coins.forEach(coin => {
       const coinEl = document.createElement("p");
@@ -41,12 +41,29 @@
       coinHours.appendChild(coinEl);
     })
   }; 
-
-  var currencyG = "GBP";
-  var currencyE = "EUR";
-   fetch('https://free.currconv.com/api/v7/convert?q=USD_' + currencyE + '&compact=ultra&apiKey=1818d0fb079f7cd25a8c')
+  
+  // 
+  const currency ="";
+  // 
+  const currencyU = "USD";
+   fetch('https://free.currconv.com/api/v7/convert?q=USD_' + currency + '&compact=ultra&apiKey=1818d0fb079f7cd25a8c')
    .then(response => response.json())
-   .then()
+   .then(currencies => convert(currencies));
+  
+  const convert = currencies => {
+    console.log(currencies);
+  const coinOutput = document.querySelector(".output");
+  const currencyG = "GBP";
+  const currencyE = "EUR";
+  
+  // if(currency = currencyG){
+  
+  // } if (currency = currencyE){
+
+  // }
+ }
+ const convertBtn = document.querySelector(".button");
+ convertBtn.addEventListener("click",convert());
   
    
 
@@ -60,7 +77,7 @@
     //   };
 
     //   if (document.getElementById("rate") = "GBP") {
-    //     coinEl.innerHTML = ((coin.price_usd*.73) / document.getElementById("amount"));
+    //     coinEl.innerHTML = ((coin.price_usd*) / document.getElementById("amount"));
     //   };
 
     //   if (document.getElementById("rate") = "EUR") {
