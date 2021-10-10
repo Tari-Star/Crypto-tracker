@@ -20,7 +20,7 @@ https://tari-star.github.io/Crypto-tracker/
 
 # Screenshot
 
-![](images/Screen Shot 2021-10-10 at 3.43.30 PM.png)
+![](images/https://github.com/Tari-Star/Crypto-tracker/blob/feature/image/Screen%20Shot%202021-10-10%20at%203.43.30%20PM.png)
 
 # Team Members
 
