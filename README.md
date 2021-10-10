@@ -16,7 +16,11 @@ This project is a crypto currency tracker that estimates the amount of crypto yo
 
 # Project website
 
+https://tari-star.github.io/Crypto-tracker/
 
+# Screenshot
+
+![](images/Screen Shot 2021-10-10 at 3.43.30 PM.png)
 
 # Team Members
 
