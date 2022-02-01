@@ -14,8 +14,9 @@ This project is a crypto currency tracker that estimates the amount of crypto yo
 
 ## Table of Contens
 
-- [Technologies](#technologies)
 - [Collaborators](#collaborators)
+- 
+- [Technologies](#technologies)
 - [Demo](#demo)
 - [Usage](#usage)
 - [License](#license)
@@ -63,17 +64,16 @@ Simply enter desired amount in converter's input, choose currency and click conv
 ## Questions?
 
 <p align="center">
+    <img src="https://avatars.githubusercontent.com/u/88730354?v=4" alt="Andy Waine" width="16%" />
+<img src="https://avatars.githubusercontent.com/u/89365355?v=4" alt="Bota Seri" width="16%" />
+<img src="https://avatars.githubusercontent.com/u/61242698?v=4" alt="Casey Lister" width="16%" />
+<img src="https://avatars.githubusercontent.com/u/87204964?v=4" alt="Casey Lister" width="16%" />
+  </p>
 
 For any questions about the repo, please contact us with the information below :
 
 ---
 
-  <img src="https://avatars.githubusercontent.com/u/88730354?v=4" alt="Andy Waine" width="16%" />
-<img src="https://avatars.githubusercontent.com/u/89365355?v=4" alt="Bota Seri" width="16%" />
-<img src="https://avatars.githubusercontent.com/u/61242698?v=4" alt="Casey Lister" width="16%" />
-<img src="https://avatars.githubusercontent.com/u/87204964?v=4" alt="Casey Lister" width="16%" />
-  </p>
-  
  ***To open an issue :***
  
  GitHub/Issues: [Crypto Tracker](https://Tari-Star/Crypto-tracker/issues)
