@@ -63,7 +63,7 @@ Simply enter desired amount in converter's input, choose currency and click conv
 ## Questions?
 
 <p align="center">
-    <img src="https://avatars.githubusercontent.com/u/88730354?v=4" alt="Andy Waine" width="16%" />
+<img src="https://avatars.githubusercontent.com/u/88730354?v=4" alt="Andy Waine" width="16%" />
 <img src="https://avatars.githubusercontent.com/u/89365355?v=4" alt="Bota Seri" width="16%" />
 <img src="https://avatars.githubusercontent.com/u/61242698?v=4" alt="Casey Lister" width="16%" />
 <img src="https://avatars.githubusercontent.com/u/87204964?v=4" alt="Casey Lister" width="16%" />
