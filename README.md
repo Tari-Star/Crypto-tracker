@@ -15,7 +15,6 @@ This project is a crypto currency tracker that estimates the amount of crypto yo
 ## Table of Contens
 
 - [Collaborators](#collaborators)
-- 
 - [Technologies](#technologies)
 - [Demo](#demo)
 - [Usage](#usage)
@@ -36,7 +35,7 @@ This project is a crypto currency tracker that estimates the amount of crypto yo
 
 <p align="center">
 <img src="https://img.shields.io/badge/HTML-orange"/>
-  <img src="https://img.shields.io/badge/BULMA-yellow" >
+<img src="https://img.shields.io/badge/BULMA-yellow" >
 <img src="https://img.shields.io/badge/JAVASCRIPT-purple" />
 <img src="https://img.shields.io/badge/BOOTSTRAP-green"  />
 <img src="https://img.shields.io/badge/API-red"  />
