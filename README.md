@@ -45,7 +45,7 @@ This project is a crypto currency tracker that estimates the amount of crypto yo
 
 **_Deployed link:_** [https://tari-star.github.io/Crypto-tracker/](https://tari-star.github.io/Crypto-tracker/)
 
-**_Repository link:_** [https://github.com/Tari-Star/Crypto-tracker](hhttps://github.com/Tari-Star/Crypto-tracker)
+**_Repository link:_**  [https://github.com/Tari-Star/Crypto-tracker](hhttps://github.com/Tari-Star/Crypto-tracker)
 
 **_Screenshot:_**
 
