@@ -1,72 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crypto Converter</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <!--bulma/css-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
-    />
-  </head>
 
+<<<<<<< HEAD
   <body>
     <div class="container">
       <header class="title-custom">
         <h1><strong>Crypto Converer</strong></h1>
       </header>
       <!-- Inputs Section -->
+=======
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Converter</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <!--bulma/css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+</head>
 
-      <div class="row converter sec-1 center-align">
-        <form>
+<body>
+  <div class="container">
+    <header class="title-custom">
+      <h1><strong>Crypto Converter</strong></h1>
+    </header>
+    <!-- Inputs Section -->
+>>>>>>> dea4b7c04a2f9253998aefee93e428d6cd6779d1
+
           <!--Inputs-->
-          <input type="number" class="fiatAmount-ID" id="fiatAmount-ID" value="" placeholder="Enter amount"/>
+    <div class="converter row converter sec-1 center-align">
 
-          <select id="rate" >
-            <option value="USD">USD</option>
-            <option value="GBP">GBP</option>
-            <option value="EUR">EUR</option>
-          </select>
-          <!--End Fiat Currency Selection-->
-          <!--Submit Button-->
-          <div id="submit-button-container">
-            <button  class="button is-primary is-rounded button-fill-left" id="submit">Convert</button>
-            <div class="rate" id="rate"></div>
-          </div>
-          <!--End Submit Button-->
-        </form>
-    </div>
-      <!-- end of converter -->
+      <div class="main">
 
-      <div class="columns" id="sections">
-        <div class="title column is-2"><h2>Coin</h2></div>
-        <div class="title column is-2"><h2>Price</h2></div>
-        <div class="title column is-2"><h2>Market Cap</h2></div>
-        <div class="title column is-2"><h2>1 Hour</h2></div>
-        <div class="title column is-2"><h2>24 Hour</h2></div>
-        <div class="title column is-2"><h2>Output</h2></div>
-      </div>
-      <div class="columns api-style" id="info">
-        <div class="column is-2 coin-list"></div>
-        <div class="column is-2 price"></div>
-        <div class="column is-2 market-cap"></div>
-        <div class="column is-2 one-hour"></div>
-        <div class="column is-2 hours"></div>
-        <div class ="column is-2 output"></div>
+        <div class="form-group">
+          <label for="fiatAmount-ID">
+            Amount to Convert :
+          </label>
+          <input type="text" class="form-control fiatAmount-ID" placeholder="0.00" id="fiatAmount-ID">
         </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">From</span>
+              </div>
+              <select class="form-control from" id="rate">
+                <option value="">Select One …</option>
+                <option value="USD">USD</option>
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MVR">MVR</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="UYU">UYU</option>
+                <option value="ZAR">ZAR</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">To</span>
+              </div>
+              <select class="form-control to" id="rate2">
+                <option value="">Select One …</option>
+                <option value="USD">USD</option>
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MVR">MVR</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="UYU">UYU</option>
+                <option value="ZAR">ZAR</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+
+          <!-- convert button -->
+          <button class="button is-primary is-rounded button-fill-left convert" id="submit" type="submit">
+            Convert
+          </button>
+
+          <!-- reset button -->
+          <button class="button is-primary is-rounded button-fill-left" id="submit" onclick="clearVal()">
+            Reset
+          </button>
+        </div>
+
+      </div>
+      <div id="finalAmount" class="text-center">
+
+        <!-- Display the converted amount -->
+        <h2>Converted Amount :
+          <span class="finalValue" style="color:green;">
+          </span>
+        </h2>
+      </div>
     </div>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="script.js"></script>
+
+    <!-- end of converter -->
+
+    <div class="columns" id="sections">
+      <div class="title column is-2">
+        <h2>Coin</h2>
+      </div>
+      <div class="title column is-2">
+        <h2>Price</h2>
+      </div>
+      <div class="title column is-2">
+        <h2>Market Cap</h2>
+      </div>
+      <div class="title column is-2">
+        <h2>1 Hour</h2>
+      </div>
+      <div class="title column is-2">
+        <h2>24 Hours</h2>
+      </div>
+      <div class="title column is-2">
+        <h2>7 Days</h2>
+      </div>
+    </div>
+    <div class="columns api-style" id="info">
+      <div class="column is-2 coin-list"></div>
+      <div class="column is-2 price"></div>
+      <div class="column is-2 market-cap"></div>
+      <div class="column is-2 one-hour"></div>
+      <div class="column is-2 hours"></div>
+      <div class="column is-2 days"></div>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./assets/script.js"></script>
+
 </html>
